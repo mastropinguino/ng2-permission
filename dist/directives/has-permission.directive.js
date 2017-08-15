@@ -45,25 +45,25 @@ var HasPermissionDirective = (function () {
                 this._elem.nativeElement.style.display = 'inherit';
         }
     };
-    __decorate([
-        core_1.Input('hasPermission'),
-        __metadata("design:type", Array)
-    ], HasPermissionDirective.prototype, "permissions", void 0);
-    __decorate([
-        core_1.Input('onAuthorizedPermission'),
-        __metadata("design:type", Object)
-    ], HasPermissionDirective.prototype, "onAuthorized", void 0);
-    __decorate([
-        core_1.Input('onUnauthorizedPermission'),
-        __metadata("design:type", Function)
-    ], HasPermissionDirective.prototype, "onUnauthorized", void 0);
-    HasPermissionDirective = __decorate([
-        core_1.Directive({
-            selector: '[hasPermission]'
-        }),
-        __metadata("design:paramtypes", [core_1.ElementRef, permission_service_1.PermissionService, permission_helper_service_1.PermissionHelper])
-    ], HasPermissionDirective);
     return HasPermissionDirective;
 }());
+__decorate([
+    core_1.Input('hasPermission'),
+    __metadata("design:type", Array)
+], HasPermissionDirective.prototype, "permissions", void 0);
+__decorate([
+    core_1.Input('onAuthorizedPermission'),
+    __metadata("design:type", Object)
+], HasPermissionDirective.prototype, "onAuthorized", void 0);
+__decorate([
+    core_1.Input('onUnauthorizedPermission'),
+    __metadata("design:type", Function)
+], HasPermissionDirective.prototype, "onUnauthorized", void 0);
+HasPermissionDirective = __decorate([
+    core_1.Directive({
+        selector: '[hasPermission]'
+    }),
+    __metadata("design:paramtypes", [core_1.ElementRef, permission_service_1.PermissionService, permission_helper_service_1.PermissionHelper])
+], HasPermissionDirective);
 exports.HasPermissionDirective = HasPermissionDirective;
 //# sourceMappingURL=has-permission.directive.js.map

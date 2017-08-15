@@ -45,25 +45,25 @@ var ExceptPermissionDirective = (function () {
                 this._elem.nativeElement.style.display = 'inherit';
         }
     };
-    __decorate([
-        core_1.Input('exceptPermission'),
-        __metadata("design:type", Array)
-    ], ExceptPermissionDirective.prototype, "exceptPermission", void 0);
-    __decorate([
-        core_1.Input('onAuthorizedPermission'),
-        __metadata("design:type", Function)
-    ], ExceptPermissionDirective.prototype, "onAuthorized", void 0);
-    __decorate([
-        core_1.Input('onUnauthorizedPermission'),
-        __metadata("design:type", Function)
-    ], ExceptPermissionDirective.prototype, "onUnauthorized", void 0);
-    ExceptPermissionDirective = __decorate([
-        core_1.Directive({
-            selector: '[exceptPermission]'
-        }),
-        __metadata("design:paramtypes", [core_1.ElementRef, permission_service_1.PermissionService, permission_helper_service_1.PermissionHelper])
-    ], ExceptPermissionDirective);
     return ExceptPermissionDirective;
 }());
+__decorate([
+    core_1.Input('exceptPermission'),
+    __metadata("design:type", Array)
+], ExceptPermissionDirective.prototype, "exceptPermission", void 0);
+__decorate([
+    core_1.Input('onAuthorizedPermission'),
+    __metadata("design:type", Function)
+], ExceptPermissionDirective.prototype, "onAuthorized", void 0);
+__decorate([
+    core_1.Input('onUnauthorizedPermission'),
+    __metadata("design:type", Function)
+], ExceptPermissionDirective.prototype, "onUnauthorized", void 0);
+ExceptPermissionDirective = __decorate([
+    core_1.Directive({
+        selector: '[exceptPermission]'
+    }),
+    __metadata("design:paramtypes", [core_1.ElementRef, permission_service_1.PermissionService, permission_helper_service_1.PermissionHelper])
+], ExceptPermissionDirective);
 exports.ExceptPermissionDirective = ExceptPermissionDirective;
 //# sourceMappingURL=except-permission.directive.js.map

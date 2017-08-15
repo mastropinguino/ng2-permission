@@ -71,11 +71,11 @@ var PermissionService = (function () {
         enumerable: true,
         configurable: true
     });
-    PermissionService = __decorate([
-        core_1.Injectable(),
-        __metadata("design:paramtypes", [])
-    ], PermissionService);
     return PermissionService;
 }());
+PermissionService = __decorate([
+    core_1.Injectable(),
+    __metadata("design:paramtypes", [])
+], PermissionService);
 exports.PermissionService = PermissionService;
 //# sourceMappingURL=permission.service.js.map

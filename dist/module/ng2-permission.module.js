@@ -12,18 +12,25 @@ var except_permission_directive_1 = require("../directives/except-permission.dir
 var permission_service_1 = require("../services/permission.service");
 var permission_guard_1 = require("../services/permission.guard");
 var permission_helper_service_1 = require("../services/permission-helper.service");
-var Ng2Permission = (function () {
+var Ng2Permission = Ng2Permission_1 = (function () {
     function Ng2Permission() {
     }
-    Ng2Permission = __decorate([
-        core_1.NgModule({
-            declarations: [has_permission_directive_1.HasPermissionDirective, except_permission_directive_1.ExceptPermissionDirective],
-            imports: [],
-            exports: [has_permission_directive_1.HasPermissionDirective, except_permission_directive_1.ExceptPermissionDirective],
-            providers: [permission_service_1.PermissionService, permission_guard_1.PermissionGuard, permission_helper_service_1.PermissionHelper],
-        })
-    ], Ng2Permission);
+    Ng2Permission.forRoot = function () {
+        return {
+            ngModule: Ng2Permission_1,
+            providers: [permission_service_1.PermissionService, permission_guard_1.PermissionGuard, permission_helper_service_1.PermissionHelper]
+        };
+    };
     return Ng2Permission;
 }());
+Ng2Permission = Ng2Permission_1 = __decorate([
+    core_1.NgModule({
+        declarations: [has_permission_directive_1.HasPermissionDirective, except_permission_directive_1.ExceptPermissionDirective],
+        imports: [],
+        exports: [has_permission_directive_1.HasPermissionDirective, except_permission_directive_1.ExceptPermissionDirective],
+        providers: [],
+    })
+], Ng2Permission);
 exports.Ng2Permission = Ng2Permission;
+var Ng2Permission_1;
 //# sourceMappingURL=ng2-permission.module.js.map

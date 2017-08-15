@@ -38,11 +38,11 @@ var PermissionGuard = (function () {
             return false;
         }
     };
-    PermissionGuard = __decorate([
-        core_1.Injectable(),
-        __metadata("design:paramtypes", [permission_service_1.PermissionService, router_1.Router])
-    ], PermissionGuard);
     return PermissionGuard;
 }());
+PermissionGuard = __decorate([
+    core_1.Injectable(),
+    __metadata("design:paramtypes", [permission_service_1.PermissionService, router_1.Router])
+], PermissionGuard);
 exports.PermissionGuard = PermissionGuard;
 //# sourceMappingURL=permission.guard.js.map

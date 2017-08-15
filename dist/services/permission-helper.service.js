@@ -31,11 +31,11 @@ var PermissionHelper = (function () {
                 throw "onUnauthorized attribute is function or one of this items: <enable, disable, show, hide>";
         }
     };
-    PermissionHelper = __decorate([
-        core_1.Injectable(),
-        __metadata("design:paramtypes", [])
-    ], PermissionHelper);
     return PermissionHelper;
 }());
+PermissionHelper = __decorate([
+    core_1.Injectable(),
+    __metadata("design:paramtypes", [])
+], PermissionHelper);
 exports.PermissionHelper = PermissionHelper;
 //# sourceMappingURL=permission-helper.service.js.map
